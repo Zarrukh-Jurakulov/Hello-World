@@ -1,0 +1,1138 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group - Multi-Purpose Parallax Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@400;500&display=swap');
+
+    html body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+    }
+
+    h1 {
+      font-family: 'Poppins';
+      font-weight: 400;
+    }
+
+    h3 {
+      font-family: 'Poppins';
+      font-weight: 400;
+      color: #787cd2;
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-weight: 100;
+      color: #585858;
+    }
+
+    a {
+      font-family: 'Poppins';
+      font-weight: 200;
+    }
+
+    li {
+      font-family: 'Poppins';
+      font-weight: 400;
+    }
+
+    .page1 {
+      background-image:
+        url(./img/bg-05.jpg);
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: center;
+      overflow: hidden;
+
+    }
+
+
+
+    .page1Img img {
+      height: 65vh;
+      max-width: 100%;
+      float: left;
+      display: block;
+
+    }
+
+    .page1Text {
+      height: 80vh;
+      width: 35%;
+      float: left;
+      margin-left: 100px;
+      font-weight: 500;
+      text-align: left;
+
+    }
+
+    .page1Text h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page1Text h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page1Text p {
+      font-size: 18px;
+      font-family: 'Roboto';
+      text-align: left;
+    }
+
+    .page1Email input {
+      margin: 0 0 2px;
+      padding: 12px 50px;
+      text-align: left;
+      background: none;
+      border-width: 1px;
+      border-color: lightslategray;
+    }
+
+    .page1Button input {
+      border-radius: 50px;
+      padding: 5 30px;
+      background-color: #787cd2;
+      font-size: 11px;
+      font-family: 'Poppins';
+      color: white;
+      font-weight: 700;
+      border: 1px solid #787cd2;
+    }
+
+    .page1Button input:hover {
+      color: #787cd2;
+      background-color: white;
+    }
+
+    .page2 {
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      background-color: white;
+
+    }
+
+    .page2Part1 {
+      height: 20vh;
+      width: 100%;
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .page2Intro {
+      text-align: center;
+      margin-top: 130px;
+      padding: 0 50px;
+      width: 30%;
+    }
+
+    .page2Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page2Intro h3 {
+      font-size: 33px;
+      color: #787cd2;
+      font-family: 'Poppins';
+    }
+
+    .page2Intro p {
+      font-size: 18px;
+      font-family: 'Roboto';
+    }
+
+    .page2Images {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .page2Icon {
+      align-items: center;
+      margin: 150 0 0 0px;
+      padding: 60px;
+
+    }
+
+    .page2Icon i {
+      background-color: #787cd2;
+      color: white;
+      border: 11px;
+      height: 75px;
+      width: 75px;
+      margin-left: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .page2Icon h1 {
+      font-size: 25px;
+      font-family: 'Poppins';
+    }
+
+    .page2Icon p {
+      font-size: 18px;
+      font-family: 'Roboto';
+      color: #585858;
+    }
+
+    .page3 {
+      height: 120vh;
+      width: 100%;
+      background-image: url('./img/bg-06.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: center;
+    }
+
+    .page3Img img {
+      height: 75vh;
+      max-width: 100%;
+      float: left;
+      display: block;
+    }
+
+    .page3Part2 {
+      margin-bottom: 40px;
+    }
+
+    .page3Part2Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page3Part2Intro h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page3Part2 p {
+      color: #585858;
+      font-size: 18px;
+      font-family: 'Roboto';
+    }
+
+    .page3Part2 i {
+      background-color: #787cd2;
+      color: white;
+      height: 75px;
+      width: 75px;
+      border: 11px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+    }
+
+    .page4 {
+      height: 120vh;
+      width: 100%;
+    }
+
+    .page4Intro {
+      height: 20vh;
+      text-align: center;
+    }
+
+    .page4Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page4Intro h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page4Intro p {
+      color: #585858;
+      font-family: 'Roboto';
+      font-size: 18px;
+    }
+
+    .page4Main {
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .page4Main i {
+      color: #787cd2;
+    }
+
+    .page4Main p {
+      font-size: 18px;
+      color: #585858;
+      font-family: 'Roboto';
+    }
+
+    .page4Part1 {
+      text-align: right;
+      float: left;
+      width: 20%;
+      margin: 0 20px;
+    }
+
+    .page4Img img {
+      height: 50vh;
+      max-width: 100%;
+      float: left;
+      margin: 0 20px;
+    }
+
+    .page4Part3 {
+      text-align: left;
+      float: left;
+      width: 20%;
+      margin: 0 20px;
+    }
+
+    .page5 {
+      height: 100vh;
+      width: 100%;
+      background-image: url('./img/bg-07.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .page5Intro {
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .page5Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page5Intro h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page5Intro p {
+      font-size: 18px;
+      font-family: 'Roboto';
+      color: #585858;
+    }
+
+    .page5Main {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      float: left;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      height: 50vh;
+      width: 80%;
+      text-align: center;
+      padding: 0 150px;
+    }
+
+    .page5Icon i {
+      height: 75px;
+      width: 75px;
+      background-color: #787cd2;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 79px;
+      color: white;
+      margin-top: 100px;
+    }
+
+    .page5Icon h1,
+    p {
+      text-align: center;
+
+    }
+
+    .page5Icon p {
+      color: #585858;
+    }
+
+    .page6 {
+      height: 150vh;
+      width: 100%;
+    }
+
+    .page6Intro {
+      height: 20vh;
+      width: 100%;
+      padding-top: 100px;
+      text-align: center;
+    }
+
+    .page6Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page6Intro h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page6Intro P {
+      font-size: 18px;
+      font-family: 'Roboto';
+      color: #585858;
+    }
+
+    .page6Main {
+      height: 80vh;
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 100 0 0 188px;
+
+    }
+
+    .page6Column {
+      height: 40vh;
+      width: 20%;
+      background-color: #8c8c8c0f;
+      display: table;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      cursor: move;
+    }
+
+    .page6Column i {
+      height: 75px;
+      width: 75px;
+      background-color: #787cd2;
+      color: white;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 71px;
+    }
+
+    .page6Column img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    .page7 {
+      height: 120vh;
+      width: 100%;
+      background-image: url('./img/bg-08.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .page7Intro {
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .page7Intro h1 {
+      font-size: 55px;
+      font-family: 'Poppins';
+    }
+
+    .page7Intro h3 {
+      font-size: 33px;
+      font-family: 'Poppins';
+      color: #787cd2;
+    }
+
+    .page7Intro p {
+      font-size: 18px;
+      font-family: 'Roboto';
+      color: #585858;
+    }
+
+    .page7Main {
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: center;
+    }
+
+    .page7Column1 {
+      width: 30%;
+      padding: 50px;
+      background-color: white;
+      margin-top: 150px;
+      text-align: left;
+    }
+
+    .page7Column2 {
+      width: 30%;
+      padding: 50px;
+      background-color: #787cd2;
+      margin-top: 150px;
+      text-align: left;
+    }
+
+    .page7Column1 input {
+      color: white;
+      background-color: #787cd2;
+      border-radius: 50px;
+      padding: 5 30px;
+      font-weight: 700;
+      border-width: 0;
+      border: 1px solid #787cd2;
+    }
+
+    .page7Column1 input:hover {
+      color: #787cd2;
+      background-color: white;
+      border-style: solid;
+      border-color: #787cd2;
+    }
+
+    .page7Column2 input {
+      color: #787cd2;
+      background-color: white;
+      border-radius: 50px;
+      padding: 5 30px;
+      font-weight: 700;
+      border: 1px solid #787cd2;
+    }
+
+    .page7Column2 input:hover {
+      color: white;
+      background-color: #787cd2;
+      border-style: solid;
+      border-color: white;
+    }
+
+
+
+    .page8 {
+      height: 120vh;
+      width: 100%;
+    }
+
+    .page8Intro {
+      height: 20px;
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .page8Main {
+      margin-top: 250px;
+    }
+
+    .page8Name p input {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 15% 15%;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      width: 15%;
+    }
+
+    .page8InputName {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      width: 15%;
+      padding: 0 40px;
+
+    }
+
+    .page8Name label {
+
+      text-align: center;
+
+    }
+
+    #inputName {
+      padding: 20 50px;
+      margin: 0 0 0 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .page8EmailNumber label {
+      margin: 0 80px;
+    }
+
+    #inputEmail {
+      padding: 20 50px;
+      margin: 0 0 0 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #inputTextMessages {
+      padding: 100 190px;
+      margin: 0 0 0 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .page8Button input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10 30px;
+      background-color: #787cd2;
+      border-radius: 50px;
+      font-weight: 700;
+      border-style: solid;
+      border-color: #787cd2;
+      color: white;
+      border: 1px;
+    }
+
+    .page8Button input:hover {
+      color: #787cd2;
+      background-color: white;
+      font-weight: 700;
+      border-style: solid;
+      border-color: #787cd2;
+
+    }
+
+    .footer {
+      height: 83vh;
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
+    .footer h3 {
+      color: black;
+    }
+
+    .footerMain {
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 100px;
+      font-size: 18px;
+
+    }
+
+    .footerColumn1 {
+      float: left;
+      height: 20vh;
+      width: 16%;
+      text-align: left;
+      list-style-type: none;
+
+    }
+
+    .footerColumn2 {
+      float: left;
+      height: 20vh;
+      width: 15%;
+      text-align: left;
+      list-style-type: none;
+    }
+
+    .footerColumn3 {
+      float: left;
+      height: 20vh;
+      width: 15%;
+      text-align: left;
+      list-style-type: none;
+    }
+
+    .footerColumn4 {
+      float: left;
+      height: 20vh;
+      width: 16%;
+      text-align: left;
+      list-style-type: none;
+    }
+
+    .footerMain li {
+      list-style: none !important
+    }
+
+    .footerMain a {
+      text-decoration: none;
+      color: #232323;
+    }
+
+    .footerMain a:hover {
+      color: #1018b3;
+
+    }
+
+    .footerMain li {
+      margin: 25px 0px;
+
+    }
+
+    .footerMain i {
+      color: #0e18dd;
+    }
+
+    .footerMain input {
+      padding: 12 0px;
+      background: none;
+      border: 1px solid black;
+    }
+
+    .footerMain button {
+      padding: 5 25px;
+      background-color: #787cd2;
+      color: white;
+      border: 1px solid #787cd2;
+      border-radius: 50px;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    .footerMain button:hover {
+      border: 1px solid #787cd2;
+      color: #787cd2;
+      background-color: white;
+
+    }
+
+    .navbar {
+
+      height: 55px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      top: 0;
+      position: sticky;
+      background: #9698ce;
+      position: -webkit-sticky;
+      top: 0;
+    }
+
+
+
+
+    .navPart2 ul {
+      display: inline-flex;
+      text-align: center;
+      margin-left: 400px;
+    }
+
+    .navPart2 li {
+      margin: 0 15px;
+      list-style: none !important
+    }
+
+    .navPart1 {
+      margin-left: 70px;
+    }
+
+    .navPart2 a {
+      text-decoration: none;
+      color: #232323;
+    }
+
+    .navPart2 a:hover {
+      color: darkblue;
+    }
+
+    .navPart2 i {
+      color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navPart1">
+      <h1>Goup</h1>
+    </div>
+    <div class="navPart2">
+      <ul id="navMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"> <i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-f" style="font-size:24px"></i></a></li>
+        <li><a href="#"><i class="fa fa-search" style="font-size:24px"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page1">
+    <div class="page1Background"></div>
+
+    <div class="page1Img">
+      <img src="./img/bg-01.png">
+    </div>
+    <div class="page1Text">
+      <h1>Increase your sales to max.</h1>
+      <h3>We are great at what we do.</h3>
+      <p>Use the Feedback button at the bottom of the page to let us know how we can make it even better.
+      </p>
+      <div class="page1Input">
+        <form action="/action_page.php">
+          <label for="email"></label>
+          <div class="page1Email"><input type="email" id="email" name="email" placeholder="email"></div><br>
+          <div class="page1Button"> <input type="button" value="S U B C R I B E"></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class=" page2">
+    <div class="page2Part1">
+      <div class="page2Intro">
+        <h1>Our services.</h1>
+        <h3>We are great at what we do.</h3>
+        <p>Use the Feedback button at the bottom of the page to let us know how we can make it even better.
+        </p>
+      </div>
+    </div>
+    <div class="page2Images">
+      <div class="page2Icon">
+        <i class="fa fa-bell" style="font-size:36px"></i>
+        <h1>Get Notification</h1>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <div class="page2Icon">
+        <i class="fa fa-ellipsis-v" style="font-size:36px"></i>
+        <h1>Versatile</h1>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+      <div class="page2Icon"><i class="fa fa-clock-o" style="font-size:36px"></i>
+        <h1>Early Access</h1>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.
+        </p>
+      </div>
+      <div class="page2Icon">
+        <i class="fa fa-square-o" style="font-size:36px;"></i>
+        <h1>Fast Workflow</h1>
+        <p>Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page3">
+
+    <div class="page3Img">
+      <img src="./img/bg-02.png">
+    </div>
+    <div class="page3Part2">
+      <div class="page3Part2Intro">
+        <h1>Core Features.</h1>
+        <h3>Lorem ipsum dolor simet.</h3>
+        <p>Use the Feedback button at the bottom of the page to let us.</p>
+      </div>
+      <div class="page3icon">
+        <i class="fa fa-server" style="font-size:36px"></i>
+        <h1>Server Support</h1>
+        <p>The page to let us know how we can make it even better.</p>
+      </div>
+      <div class="page3icon">
+        <i class="fa fa-print" style="font-size:36px"></i>
+        <h1>Printing Stuff</h1>
+        <p>The page to let us know how we can make it even better.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page4">
+    <div class="page4Intro">
+      <h1>Why Choose Us?</h1>
+      <h3>Lorem ipsum dolor simet.</h3>
+      <p>Use the Feedback button at the bottom of the page to let us.</p>
+    </div>
+    <div class="page4Main">
+      <div class="page4Part1">
+        <div class="page3Icon">
+          <i class="fa fa-globe" style="font-size:36px"></i>
+          <h1>Amazing Record</h1>
+          <p>As opposed to using content here, content here, Making it look like readable english.</p>
+        </div>
+        <div class="page3Icon">
+          <i class="fa fa-plug" style="font-size:36px"></i>
+          <h1>Social Media</h1>
+          <p>As opposed to using content here, content here, Making it look like readable english.</p>
+        </div>
+      </div>
+      <div class="page4Img">
+        <img src="./img/bg-03.png">
+      </div>
+      <div class="page4Part3">
+        <div class="page3Icon"><i class="fa fa-envelope" style="font-size:36px"></i>
+          <h1>Email Services</h1>
+          <p>As opposed to using content here, content here, Making it look like readable english.</p>
+        </div>
+        <div class="page3Icon"> <i class="fa fa-pencil" style="font-size:36px"></i>
+          <h1>File Editing</h1>
+          <p>As opposed to using content here, content here, Making it look like readable english.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page5">
+    <div class="page5Intro">
+      <h1>Our Records.</h1>
+      <h3>Lorem ipsum dolor simet.</h3>
+      <p>Use the Feedback button at the bottom of the page to let us.</p>
+    </div>
+    <div class="page5Main">
+      <div class="page5Icon">
+        <i class="fa fa-money" style="font-size:36px"></i>
+        <h1>800</h1>
+        <p>Projects</p>
+      </div>
+      <div class="page5Icon">
+        <i class="fa fa-download" style="font-size:36px"></i>
+        <h1>889</h1>
+        <p>Downloads</p>
+      </div>
+      <div class="page5Icon">
+        <i class="fa fa-globe" style="font-size:36px"></i>
+        <h1>440</h1>
+        <p>Clients</p>
+      </div>
+      <div class="page5Icon">
+        <i class="fa fa-link" style="font-size:36px;"></i>
+        <h1>16</h1>
+        <p>Awards</p>
+      </div>
+    </div>
+  </div>
+  <div class="page6">
+    <div class="page6Intro">
+      <h1>Some Reviews.</h1>
+      <h3>Lorem ipsum dolor simet.</h3>
+      <p>Use the Feedback button at the bottom of the page to let us.</p>
+    </div>
+    <div class="page6Main">
+      <div class="page6Column">
+        <i class="fa fa-quote-left" style="font-size:36px"></i>
+        <p>You saw her bathing on the roof Her beauty and the moonlight overthrew ya She tied you toher kitchen chair.
+        </p>
+        <img src="https://templatemilk.com/templates/goup/images/avatars/02.jpg">
+        <h1>Cicilia Roe</h1>
+        <p>User</p>
+      </div>
+      <div class="page6Column">
+        <i class="fa fa-quote-left" style="font-size:36px"></i>
+        <p>You saw her bathing on the roof Her beauty and the moonlight overthrew ya She tied you toher kitchen chair.
+        </p>
+        <img src="https://templatemilk.com/templates/goup/images/avatars/01.jpg">
+        <h1>Major Lia</h1>
+        <p>User</p>
+      </div>
+      <div class="page6Column">
+        <i class="fa fa-quote-left" style="font-size:36px"></i>
+        <p>You saw her bathing on the roof Her beauty and the moonlight overthrew ya She tied you toher kitchen chair.
+        </p>
+        <img src="https://templatemilk.com/templates/goup/images/avatars/03.jpg">
+        <h1>Ian Capple</h1>
+        <p>User</p>
+      </div>
+    </div>
+  </div>
+  <div class="page7">
+    <div class="page7Intro">
+      <h1>Our Pricing.</h1>
+      <h3>Lorem ipsum dolor simet.</h3>
+      <p>Use the Feedback button at the bottom of the page to let us.</p>
+    </div>
+    <div class="page7Main">
+      <div class="page7Column1">
+        <h1>19/Mo.</h1>
+        <h3>Starter</h3>
+        <p><i class="fa fa-check" style="font-size:24px"></i> Downloads.</p>
+        <p><i class="fa fa-check" style="font-size:24px"></i> Contents</p>
+        <form action="/action_page.php">
+          <input type="button" value="G E T  I T  N O W">
+        </form>
+      </div>
+      <div class="page7Column2">
+        <h1>59/Mo.</h1>
+        <h3>Premium</h3>
+        <p><i class="fa fa-check" style="font-size:24px"></i> Downloads.</p>
+        <p><i class="fa fa-check" style="font-size:24px"></i> Contents.</p>
+        <form action="/action_page.php">
+          <input type="button" value="G E T  I T  N O W">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="page8">
+    <div class="page8Intro">
+      <h1 style="font-size: 55px; font-family: 'Poppins';">Contact Us.</h1>
+      <h3 style="font-family: 'Poppins'; color: #787cd2; font-size: 33px;">Lorem ipsum dolor simet.</h3>
+      <p style="font-size: 18px; color: #585858; font-family: 'Roboto';">Use the Feedback button at the bottom of the
+        page
+        to let us.</p>
+    </div>
+    <div class="page8Main">
+
+      <form action="/action_page.php">
+        <div class="page8Name">
+          <div style="margin: 20;  text-align: center; justify-content: center; ">
+            <label for="text" style="margin-right: 210px;">First Name</label> <label for="fname"
+              style="margin-right: 150px;">Last name:</label>
+          </div>
+          <div style="margin: 20; display: flex;  text-align: center; justify-content: center;">
+            <input type="text" id="inputName" name="text">
+            <input type="text" id="inputName" name="text" placeholder="i.e.Statham">
+          </div>
+        </div>
+
+        <div class="page8EmailNumber">
+          <div
+            style="display: flex; text-align: center; margin-left: 10px; align-items: center; justify-content: center;">
+            <label for="email" style="margin-right: 112;">Email Address</label><label for="Number"
+              style="margin-right: 210px">Phone Number</label>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center; margin: 20;">
+            <input type="email" id="inputEmail" name="email" placeholder="i.e.jason@statham.com">
+            <input type="number" id="inputEmail" name="text" placeholder="i.e.+1 929 7092 111">
+          </div>
+        </div>
+        <div class="page8Messages">
+          <div style="display: flex; text-align: center; justify-content: center; margin: 0 100px;">
+            <label for="text" style="margin-right: 400px;">Your Messages</label>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center; margin: 20;">
+            <input type="text" id="inputTextMessages" name="text"><br>
+          </div>
+        </div>
+        <div class="page8Button"
+          style="display: flex; align-items: center; justify-content: center; text-align: center; padding: 10 30px; ">
+          <input type="button" value="S E N D  M E S S A G E">
+        </div>
+    </div>
+    </form>
+  </div>
+  <div class="footer">
+    <div class="footerMain">
+      <div class="footerColumn1">
+        <ul>
+          <li>
+            <h3>Goup</h3>
+          </li>
+          <li>
+            <p style="text-align: left;">Stay updated by subscribing to our newsletter. We do not spam or send
+              unimportant stuff.</p>
+          </li>
+          <li>
+            <form action="/action"><input type="email" name="email" id="footerEmail" placeholder="Email">
+              <button>S U B C R I B E</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="footerColumn2">
+        <ul>
+          <li>
+            <h3>Social</h3>
+          </li>
+          <li><i class="fa fa-facebook-f" style="font-size:16px"></i> <a href="#">Facebook</a></li>
+          <li><i class="fa fa-instagram" style="font-size:16px"></i> <a href="#">Instagram</a></li>
+          <li><i class="fa fa-pinterest" style="font-size:16px"></i> <a href="#">Pinteres</a></li>
+          <li><i class="fa fa-behance" style="font-size:16px"></i> <a href="#">Behance</a></li>
+          <li><i class="fa fa-youtube-play" style="font-size:16px"></i> <a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="footerColumn3">
+        <ul>
+          <li>
+            <h3>Sitemap</h3>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Screenshots</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footerColumn4">
+        <ul>
+          <li>
+            <h3>Contact</h3>
+          </li>
+          <li><i class="fa fa-map-marker" style="font-size:16px"></i><a href="#">
+              45-50 Bar St. New York</a>
+          </li>
+          <li><i class="fa fa-envelope" style="font-size:16px"></i> <a href="#">brand@domain.com</a></li>
+          <li><i class="fa fa-globe" style="font-size:16px"></i> <a href="#">support@domain.com</a></li>
+          <li><i class="fa fa-phone" style="font-size:16px"></i> <a href="#">+00 (123) 456 78 90</a></li>
+          <li><i class="fa fa-paper-plane" style="font-size:16px"></i> <a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
