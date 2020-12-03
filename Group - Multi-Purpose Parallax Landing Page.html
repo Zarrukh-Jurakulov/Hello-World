@@ -6,13 +6,43 @@
   <title>Group - Multi-Purpose Parallax Landing Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@400;500&display=swap');
+
     html body {
       margin: 0;
       padding: 0;
+      width: 100%;
+
+    }
+
+    h1 {
+      font-family: 'Poppins';
+      font-weight: 400;
+    }
+
+    h3 {
+      font-family: 'Poppins';
+      font-weight: 400;
+      color: #787cd2;
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-weight: 100;
+      color: #585858;
+    }
+
+    a {
+      font-family: 'Poppins';
+      font-weight: 200;
+    }
+
+    li {
+      font-family: 'Poppins';
+      font-weight: 400;
     }
 
     .page1 {
-      opacity: 3;
       background-image:
         url(./img/bg-05.jpg);
       height: 100vh;
@@ -25,8 +55,11 @@
       align-items: center;
       text-align: left;
       justify-content: center;
+      overflow: hidden;
 
     }
+
+
 
     .page1Img img {
       height: 65vh;
@@ -42,6 +75,8 @@
       float: left;
       margin-left: 100px;
       font-weight: 500;
+      text-align: left;
+
     }
 
     .page1Text h1 {
@@ -58,6 +93,7 @@
     .page1Text p {
       font-size: 18px;
       font-family: 'Roboto';
+      text-align: left;
     }
 
     .page1Email input {
@@ -624,11 +660,11 @@
     .footer {
       height: 83vh;
       width: 100%;
-      background-color: #9a9a9a;
+      background-color: #f1f1f1;
+    }
 
-
-
-
+    .footer h3 {
+      color: black;
     }
 
     .footerMain {
@@ -723,13 +759,20 @@
     }
 
     .navbar {
-      background-color: none;
-      height: 65px;
+
+      height: 55px;
       width: 100%;
       display: flex;
       align-items: center;
-      position: fixed;
+      top: 0;
+      position: sticky;
+      background: #9698ce;
+      position: -webkit-sticky;
+      top: 0;
     }
+
+
+
 
     .navPart2 ul {
       display: inline-flex;
@@ -738,7 +781,7 @@
     }
 
     .navPart2 li {
-      margin: 0 20px;
+      margin: 0 15px;
       list-style: none !important
     }
 
@@ -762,6 +805,7 @@
 </head>
 
 <body>
+
   <div class="navbar">
     <div class="navPart1">
       <h1>Goup</h1>
@@ -781,6 +825,7 @@
       </ul>
     </div>
   </div>
+
   <div class="page1">
     <div class="page1Background"></div>
 
