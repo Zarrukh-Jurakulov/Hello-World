@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carusel</title>
+   <style>
+      .page5 {
+         height: 50vh;
+         width: 100%;
+         background-color: lime;
+         display: flex;
+         text-align: left;
+         align-items: center;
+         justify-content: center;
+      }
+
+      @keyframes slidy {
+         0% {
+            left: 0%;
+         }
+
+         20% {
+            left: 0%;
+         }
+
+         25% {
+            left: -100%;
+         }
+
+         45% {
+            left: -100%;
+         }
+
+         50% {
+            left: -200%;
+         }
+
+         70% {
+            left: -200%;
+         }
+
+         75% {
+            left: -300%;
+         }
+
+         95% {
+            left: -300%;
+         }
+
+         100% {
+            left: -400%;
+         }
+      }
+
+      body {
+         margin: 0;
+      }
+
+      .page5Carusels {
+         overflow: hidden;
+      }
+
+      .page5Carusels figure img {
+         width: 10%;
+         float: left;
+         height: 150px;
+         border-radius: 50%;
+      }
+
+      .page5Carusels figure {
+         position: relative;
+         width: 300%;
+         margin: 0;
+         left: 0;
+         text-align: left;
+         font-size: 0;
+         animation: 10s slidy infinite;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="page5">
+      <div class="page5Carusels">
+         <figure>
+            <div class="page5Carusel1">
+               <div class="carusel1Img"><img src="http://ydirection.com/Root/assets/icons/review-1.png"></div>
+               <div class="caruselText">
+                  <p>Going to use lorem ipsum dolor sit amet, consectetur adipisping elit. Integer iaculis quis
+                     tellus ac
+                     vestibulum. Etiam fermentum nisln ac venenatis rhoncus.</p>
+                  <p>-Thomas young</p>
+                  <p>Vice President Primal Inc</p>
+               </div>
+
+
+               <div class="page5carusel2">
+
+                  <div class="carusel2Img"><img src="http://ydirection.com/Root/assets/icons/review-2.png">
+                  </div>
+                  <div class="caruselText">
+                     <p>Going to use lorem ipsum dolor sit amet, consectetur adipisping elit. Integer iaculis
+                        quis tellus ac
+                        vestibulum. Etiam fermentum nisln ac venenatis rhoncus.</p>
+                     <p>-Neil Harris</p>
+                     <p>President Proton LLC</p>
+                  </div>
+
+               </div>
+
+
+               <div class="carusel3">
+
+                  <div class="carusel3Img"><img src="http://ydirection.com/Root/assets/icons/review-3.png">
+                  </div>
+                  <div class="caruselText">
+                     <p>Going to use lorem ipsum dolor sit amet, consectetur adipisping elit. Integer iaculis
+                        quis tellus ac
+                        vestibulum. Etiam fermentum nisln ac venenatis rhoncus.</p>
+                     <p>Alison Burgers</p>
+                     <p>CEO Marga Holdings</p>
+                  </div>
+         </figure>
+      </div>
+
+   </div>
+   </div>
+</body>
+
+</html>
